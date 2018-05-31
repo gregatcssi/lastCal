@@ -1,0 +1,17 @@
+
+
+
+td,th {
+    background-color:  rgb(49, 49, 49);
+    text-align: center;
+    padding: 3px;
+    color: aliceblue;
+    border:rgb(49, 49, 49) solid;
+    border-radius: 15px;
+
+    
+}
+
+table{
+    padding-bottom: 15px;
+}

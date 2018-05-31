@@ -1,0 +1,611 @@
+<div class="col-xs-12 text-center">
+  <h2>Fiscal Year {{FiscalYear}}</h2>
+</div>
+<div class="col-sm-3">
+  <h1 class="fa-lg"><b>Quarter 1</b></h1>
+
+  <div class="col-sm-12">
+    <span></span>
+    <h1 class="fa-lg"><b>Februrary</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">1</td>
+          <td style="color: rgb(0, 125, 184) ;">1</td>
+          <td *ngFor="let d of theDates[0]" [style.background-color]="d.c">{{d.d}}</td>          
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">2</td>
+          <td style="color: rgb(0, 125, 184) ;">2</td>
+          <td *ngFor="let d of theDates[1]"[style.background-color]="d.c">{{d.d}}</td>    
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">3</td>
+          <td style="color: rgb(0, 125, 184) ;">3</td>
+          <td *ngFor="let d of theDates[2]"[style.background-color]="d.c">{{d.d}}</td>      
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">4</td>
+          <td style="color: rgb(0, 125, 184) ;">4</td>
+
+          <td [style.background-color]="theDates[3][0].c" >{{theDates[3][0].d}}</td>
+          <td [style.background-color]="theDates[3][1].c" >{{theDates[3][1].d}}</td>
+          <td [style.background-color]="theDates[3][2].c" >{{theDates[3][2].d}}</td>
+          <td [style.background-color]="theDates[3][3].c" >{{theDates[3][3].d}}</td>
+          <td [style.background-color]="theDates[3][4].c" >{{theDates[3][4].d}}</td>
+          <td [style.background-color]="theDates[3][5].c" >{{theDates[3][5].d}}</td>
+          <td style="background-color:rgb(218,150,148);">{{theDates[3][6].d}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-sm-12">   <span></span>
+    <h1 class="fa-lg"><b>March</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">5</td>
+          <td style="color: rgb(0, 125, 184) ;">5</td>
+          <td *ngFor="let d of theDates[4]"[style.background-color]="d.c">{{d.d}}</td>     
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">6</td>
+          <td style="color: rgb(0, 125, 184) ;">6</td>
+          <td *ngFor="let d of theDates[5]"[style.background-color]="d.c">{{d.d}}</td>     
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">7</td>
+          <td style="color: rgb(0, 125, 184) ;">7</td>
+          <td *ngFor="let d of theDates[6]"[style.background-color]="d.c">{{d.d}}</td>     
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">8</td>
+          <td style="color: rgb(0, 125, 184) ;">8</td>
+          <td *ngFor="let d of theDates[7]"[style.background-color]="d.c">{{d.d}}</td>     
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="col-sm-12">   <span></span>
+    <h1 class="fa-lg"><b>April</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">9</td>
+          <td style="color: rgb(0, 125, 184) ;">9</td>
+          <td [style.background-color]="theDates[8][0].c" >{{theDates[8][0].d}}</td>
+          <td [style.background-color]="theDates[8][1].c" >{{theDates[8][1].d}}</td>
+          <td [style.background-color]="theDates[8][2].c" >{{theDates[8][2].d}}</td>
+          <td [style.background-color]="theDates[8][3].c" >{{theDates[8][3].d}}</td>
+          <td [style.background-color]="theDates[8][4].c" >{{theDates[8][4].d}}</td>
+          <td [style.background-color]="theDates[8][5].c" >{{theDates[8][5].d}}</td>
+          <td style="background-color:rgb(33,89,103);">{{theDates[8][6].d}}</td>
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">10</td>
+          <td style="color: rgb(0, 125, 184) ;">10</td>
+          <td [style.background-color]="theDates[9][0].c" >{{theDates[9][0].d}}</td>
+          <td [style.background-color]="theDates[9][1].c" >{{theDates[9][1].d}}</td>
+          <td [style.background-color]="theDates[9][2].c" >{{theDates[9][2].d}}</td>
+          <td [style.background-color]="theDates[9][3].c" >{{theDates[9][3].d}}</td>
+          <td [style.background-color]="theDates[9][4].c" >{{theDates[9][4].d}}</td>
+          <td [style.background-color]="theDates[9][5].c" >{{theDates[9][5].d}}</td>
+          <td style="background-color:rgb(196,215,155);">{{theDates[9][6].d}}</td>
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">11</td>
+          <td style="color: rgb(0, 125, 184) ;">11</td>
+          <td *ngFor="let d of theDates[10]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">12</td>
+          <td style="color: rgb(0, 125, 184) ;">12</td>
+          <td *ngFor="let d of theDates[11]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">13</td>
+          <td style="color: rgb(0, 125, 184) ;">13</td>
+          <td *ngFor="let d of theDates[12]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="col-sm-3">
+  <h1 class="fa-lg"><b>Quarter 2</b></h1>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>May</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">1</td>
+          <td style="color: rgb(0, 125, 184) ;">14</td>
+          <td *ngFor="let d of theDates[13]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">2</td>
+          <td style="color: rgb(0, 125, 184) ;">15</td>
+          <td *ngFor="let d of theDates[14]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">3</td>
+          <td style="color: rgb(0, 125, 184) ;">16</td>
+          <td *ngFor="let d of theDates[15]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">4</td>
+          <td style="color: rgb(0, 125, 184) ;">17</td>
+          <td [style.background-color]="theDates[16][0].c" >{{theDates[16][0].d}}</td>
+          <td [style.background-color]="theDates[16][1].c" >{{theDates[16][1].d}}</td>
+          <td [style.background-color]="theDates[16][2].c" >{{theDates[16][2].d}}</td>
+          <td [style.background-color]="theDates[16][3].c" >{{theDates[16][3].d}}</td>
+          <td [style.background-color]="theDates[16][4].c" >{{theDates[16][4].d}}</td>
+          <td [style.background-color]="theDates[16][5].c" >{{theDates[16][5].d}}</td>
+          <td style="background-color:rgb(218,150,148);">{{theDates[16][6].d}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>June</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">5</td>
+          <td style="color: rgb(0, 125, 184) ;">18</td>
+          <td *ngFor="let d of theDates[17]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">6</td>
+          <td style="color: rgb(0, 125, 184) ;">19</td>
+          <td *ngFor="let d of theDates[18]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">7</td>
+          <td style="color: rgb(0, 125, 184) ;">20</td>
+          <td *ngFor="let d of theDates[19]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">8</td>
+          <td style="color: rgb(0, 125, 184) ;">21</td>
+          <td *ngFor="let d of theDates[20]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>July</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="color: rgb(0, 125, 184) ;">9</td>
+              <td style="color: rgb(0, 125, 184) ;">22</td>
+              <td [style.background-color]="theDates[21][0].c" >{{theDates[21][0].d}}</td>
+              <td [style.background-color]="theDates[21][1].c" >{{theDates[21][1].d}}</td>
+              <td [style.background-color]="theDates[21][2].c" >{{theDates[21][2].d}}</td>
+              <td [style.background-color]="theDates[21][3].c" >{{theDates[21][3].d}}</td>
+              <td [style.background-color]="theDates[21][4].c" >{{theDates[21][4].d}}</td>
+              <td [style.background-color]="theDates[21][5].c" >{{theDates[21][5].d}}</td>
+              <td style="background-color:rgb(33,89,103);">{{theDates[21][6].d}}</td>
+            </tr>
+            <tr>
+              <td style="color: rgb(0, 125, 184) ;">10</td>
+              <td style="color: rgb(0, 125, 184) ;">23</td>
+              <td [style.background-color]="theDates[22][0].c" >{{theDates[22][0].d}}</td>
+              <td [style.background-color]="theDates[22][1].c" >{{theDates[22][1].d}}</td>
+              <td [style.background-color]="theDates[22][2].c" >{{theDates[22][2].d}}</td>
+              <td [style.background-color]="theDates[22][3].c" >{{theDates[22][3].d}}</td>
+              <td [style.background-color]="theDates[22][4].c" >{{theDates[22][4].d}}</td>
+              <td [style.background-color]="theDates[22][5].c" >{{theDates[22][5].d}}</td>
+              <td style="background-color:rgb(196,215,155);">{{theDates[22][6].d}}</td>
+            </tr>
+        
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">11</td>
+          <td style="color: rgb(0, 125, 184) ;">24</td>
+          <td *ngFor="let d of theDates[23]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">12</td>
+          <td style="color: rgb(0, 125, 184) ;">25</td>
+          <td *ngFor="let d of theDates[24]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">13</td>
+          <td style="color: rgb(0, 125, 184) ;">26</td>
+          <td *ngFor="let d of theDates[25]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<div class="col-sm-3">
+  <h1 class="fa-lg"><b>Quarter 3</b></h1>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>August</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">1</td>
+          <td style="color: rgb(0, 125, 184) ;">27</td>
+          <td *ngFor="let d of theDates[26]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">2</td>
+          <td style="color: rgb(0, 125, 184) ;">28</td>
+          <td *ngFor="let d of theDates[27]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">3</td>
+          <td style="color: rgb(0, 125, 184) ;">29</td>
+          <td *ngFor="let d of theDates[28]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">4</td>
+          <td style="color: rgb(0, 125, 184) ;">30</td>
+          <td [style.background-color]="theDates[29][0].c" >{{theDates[29][0].d}}</td>
+          <td [style.background-color]="theDates[29][1].c" >{{theDates[29][1].d}}</td>
+          <td [style.background-color]="theDates[29][2].c" >{{theDates[29][2].d}}</td>
+          <td [style.background-color]="theDates[29][3].c" >{{theDates[29][3].d}}</td>
+          <td [style.background-color]="theDates[29][4].c" >{{theDates[29][4].d}}</td>
+          <td [style.background-color]="theDates[29][5].c" >{{theDates[29][5].d}}</td>
+          <td style="background-color:rgb(218,150,148);">{{theDates[29][6].d}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>September</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">5</td>
+          <td style="color: rgb(0, 125, 184) ;">31</td>
+          <td *ngFor="let d of theDates[30]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">6</td>
+          <td style="color: rgb(0, 125, 184) ;">32</td>
+          <td *ngFor="let d of theDates[31]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">7</td>
+          <td style="color: rgb(0, 125, 184) ;">33</td>
+          <td *ngFor="let d of theDates[32]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">8</td>
+          <td style="color: rgb(0, 125, 184) ;">34</td>
+          <td *ngFor="let d of theDates[33]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>October</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="color: rgb(0, 125, 184) ;">9</td>
+              <td style="color: rgb(0, 125, 184) ;">35</td>
+              <td [style.background-color]="theDates[34][0].c" >{{theDates[34][0].d}}</td>
+              <td [style.background-color]="theDates[34][1].c" >{{theDates[34][1].d}}</td>
+              <td [style.background-color]="theDates[34][2].c" >{{theDates[34][2].d}}</td>
+              <td [style.background-color]="theDates[34][3].c" >{{theDates[34][3].d}}</td>
+              <td [style.background-color]="theDates[34][4].c" >{{theDates[34][4].d}}</td>
+              <td [style.background-color]="theDates[34][5].c" >{{theDates[34][5].d}}</td>
+              <td style="background-color:rgb(33,89,103);">{{theDates[34][6].d}}</td>
+            </tr>
+            <tr>
+              <td style="color: rgb(0, 125, 184) ;">10</td>
+              <td style="color: rgb(0, 125, 184) ;">36</td>
+              <td [style.background-color]="theDates[35][0].c" >{{theDates[35][0].d}}</td>
+              <td [style.background-color]="theDates[35][1].c" >{{theDates[35][1].d}}</td>
+              <td [style.background-color]="theDates[35][2].c" >{{theDates[35][2].d}}</td>
+              <td [style.background-color]="theDates[35][3].c" >{{theDates[35][3].d}}</td>
+              <td [style.background-color]="theDates[35][4].c" >{{theDates[35][4].d}}</td>
+              <td [style.background-color]="theDates[35][5].c" >{{theDates[35][5].d}}</td>
+              <td style="background-color:rgb(196,215,155);">{{theDates[35][6].d}}</td>
+            </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">11</td>
+          <td style="color: rgb(0, 125, 184) ;">37</td>
+          <td *ngFor="let d of theDates[36]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">12</td>
+          <td style="color: rgb(0, 125, 184) ;">38</td>
+          <td *ngFor="let d of theDates[37]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">13</td>
+          <td style="color: rgb(0, 125, 184) ;">39</td>
+          <td *ngFor="let d of theDates[38]"[style.background-color]="d.c">{{d.d}}</td>   
+
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<div class="col-sm-3">
+  <h1 class="fa-lg"><b>Quarter 4</b></h1>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>November</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">1</td>
+          <td style="color: rgb(0, 125, 184) ;">40</td>
+          <td *ngFor="let d of theDates[39]"[style.background-color]="d.c">{{d.d}}</td>   
+
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">2</td>
+          <td style="color: rgb(0, 125, 184) ;">41</td>
+          <td *ngFor="let d of theDates[40]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">3</td>
+          <td style="color: rgb(0, 125, 184) ;">42</td>
+          <td *ngFor="let d of theDates[41]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">4</td>
+          <td style="color: rgb(0, 125, 184) ;">43</td>
+          <td [style.background-color]="theDates[42][0].c" >{{theDates[42][0].d}}</td>
+          <td [style.background-color]="theDates[42][1].c" >{{theDates[42][1].d}}</td>
+          <td [style.background-color]="theDates[42][2].c" >{{theDates[42][2].d}}</td>
+          <td [style.background-color]="theDates[42][3].c" >{{theDates[42][3].d}}</td>
+          <td [style.background-color]="theDates[42][4].c" >{{theDates[42][4].d}}</td>
+          <td [style.background-color]="theDates[42][5].c" >{{theDates[42][5].d}}</td>
+          <td style="background-color:rgb(218,150,148);">{{theDates[42][6].d}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>December</b></h1>
+    <table class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">5</td>
+          <td style="color: rgb(0, 125, 184) ;">44</td>
+          <td *ngFor="let d of theDates[43]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">6</td>
+          <td style="color: rgb(0, 125, 184) ;">45</td>
+          <td *ngFor="let d of theDates[44]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">7</td>
+          <td style="color: rgb(0, 125, 184) ;">46</td>
+          <td *ngFor="let d of theDates[45]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">8</td>
+          <td style="color: rgb(0, 125, 184) ;">47</td>
+          <td *ngFor="let d of theDates[46]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="col-sm-12">
+    <h1 class="fa-lg"><b>January</b></h1>
+    <table class="col-xs-12" class="col-xs-12">
+      <thead>
+        <th style="color: rgb(0, 125, 184) ;">QW</th>
+        <th style="color: rgb(0, 125, 184) ;">W</th>
+        <th>Sa</th>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+      </thead>
+      <tbody>
+          <tr>
+              <td style="color: rgb(0, 125, 184) ;">9</td>
+              <td style="color: rgb(0, 125, 184) ;">48</td>
+              <td>{{theDates[47][0].d}}</td>
+              <td>{{theDates[47][1].d}}</td>
+              <td>{{theDates[47][2].d}}</td>
+              <td>{{theDates[47][3].d}}</td>
+              <td>{{theDates[47][4].d}}</td>
+              <td>{{theDates[47][5].d}}</td>
+              <td style="background-color:rgb(33,89,103);">{{theDates[47][6].d}}</td>
+            </tr>
+            <tr>
+              <td style="color: rgb(0, 125, 184) ;">10</td>
+              <td style="color: rgb(0, 125, 184) ;">49</td>
+              <td>{{theDates[48][0].d}}</td>
+              <td>{{theDates[48][1].d}}</td>
+              <td>{{theDates[48][2].d}}</td>
+              <td>{{theDates[48][3].d}}</td>
+              <td>{{theDates[48][4].d}}</td>
+              <td>{{theDates[48][5].d}}</td>
+              <td style="background-color:rgb(196,215,155);">{{theDates[48][6].d}}</td>
+            </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">11</td>
+          <td style="color: rgb(0, 125, 184) ;">50</td>
+          <td *ngFor="let d of theDates[49]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">12</td>
+          <td style="color: rgb(0, 125, 184) ;">51</td>
+          <td *ngFor="let d of theDates[50]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+        <tr>
+          <td style="color: rgb(0, 125, 184) ;">13</td>
+          <td style="color: rgb(0, 125, 184) ;">52</td>
+          <td *ngFor="let d of theDates[51]"[style.background-color]="d.c">{{d.d}}</td>   
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="col-xs-12 text-left">
+    <h4 style="color:rgb(218,150,148);">Global Spend Tracker Feedback due from markets</h4>
+    <h4 style="color:rgb(33,89,103);">Global Spend Tracker Files due from markets; check US avail</h4>
+    <h4 style="color:rgb(196,215,155);">*Last day to submit files to EDGE team</h4>
+  </div>
