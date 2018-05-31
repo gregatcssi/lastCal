@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CalendarComponent implements OnInit {
 
   constructor() { }
-  FiscalYear=2019;
+  FiscalYear=0;
   theDates=[];
   ngOnInit() {
     this.generateDates();
@@ -18,28 +18,33 @@ export class CalendarComponent implements OnInit {
   generateDates()
   {
     let today = new Date(Date.now());
-    let startAndEndDates =[{
-      startDate:new Date('2/3/2018'),
-      endDate: new Date('2/1/2019')
-    },
-    {
-      startDate:new Date('2/2/2019'),
-      endDate: new Date('1/31/2020')
-    },
-    {
-      startDate:new Date('2/1/2020'),
-      endDate: new Date('1/30/2021')
-    }
-  ];
-  let startDate
-  let endDate
-  startAndEndDates.forEach(dt => {
-    if(dt.startDate<=today && dt.endDate>today){
-      startDate=dt.startDate;
-      endDate=  dt.endDate;
-    }
-    
-  });
+    let startAndEndDates =[
+      {
+        fisYear:2019,
+        startDate:new Date('2/3/2018'),
+        endDate: new Date('2/1/2019')
+      },
+      {
+        fisYear:2020,
+        startDate:new Date('2/2/2019'),
+        endDate: new Date('1/31/2020')
+      },
+      {
+        fisYear:2021,
+        startDate:new Date('2/1/2020'),
+        endDate: new Date('1/30/2021')
+      }
+    ];
+    let startDate
+    let endDate
+    startAndEndDates.forEach(dt => {
+      if(dt.startDate<=today && dt.endDate>today){
+        startDate=dt.startDate;
+        endDate=  dt.endDate;
+        this.FiscalYear=dt.fisYear;
+      }
+      
+    });
 
 
     let Incr =0;
@@ -65,18 +70,11 @@ export class CalendarComponent implements OnInit {
         let tmp={d:d.getDate(),c:"rgb(49, 49, 49)"};
         week.push(tmp);
       }
-      
-      
       if(Incr%7===0){
         this.theDates.push(week);
         console.log(week);
         week=[];
       }
-
     }
-
-
   }
-
-
 }
